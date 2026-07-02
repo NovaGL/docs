@@ -21,7 +21,7 @@
 <p class="updated">Last updated: 29 June 2026</p>
 
 <h2>Overview</h2>
-<p>ABN Lookup is a Chrome extension that queries the Australian Business Register (ABR) to look up Australian Business Numbers (ABNs), Australian Company Numbers (ACNs), and business names. This policy explains exactly what data is accessed, where it goes, and what is stored.</p>
+<p>ABN Lookup is a browser extension, available for Chrome and Firefox, that queries the Australian Business Register (ABR) to look up Australian Business Numbers (ABNs), Australian Company Numbers (ACNs), and business names. This policy explains exactly what data is accessed, where it goes, and what is stored — the same practices apply regardless of which browser you use.</p>
 
 <h2>Data we collect</h2>
 <p>We collect no personal data. The extension does not send any information to the developer or any third-party service operated by the developer.</p>
@@ -35,7 +35,7 @@
 <p>This request is made directly from your browser to the ABR. The ABR's own privacy policy applies to that interaction. No other external service receives any data.</p>
 
 <h2>Data stored locally on your device</h2>
-<p>The extension stores the following in Chrome's local extension storage (<code>chrome.storage.local</code>), which never leaves your device:</p>
+<p>The extension stores the following in your browser's local extension storage (the standard <code>storage.local</code> API, used identically on both Chrome and Firefox), which never leaves your device:</p>
 <ul>
   <li><strong>Your API GUID</strong> — entered by you during setup, used to authenticate ABR requests</li>
   <li><strong>Search history</strong> — the last 10 ABNs you looked up, including entity name, ABN, and status. This is displayed in the extension popup and never transmitted anywhere.</li>
@@ -60,7 +60,7 @@
 <h2>Data deletion</h2>
 <p>You can clear your search history at any time using the trash icon in the extension popup. Uninstalling the extension removes all locally stored data.</p>
 
-<h2>Limited Use disclosure</h2>
+<h2>Limited Use disclosure (Chrome Web Store)</h2>
 <p>ABN Lookup's use and transfer of information received from Chrome Web Store APIs adheres to the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq/" target="_blank" rel="noopener noreferrer">Chrome Web Store User Data Policy</a>, including the Limited Use requirements. Specifically:</p>
 <ul>
   <li>Your API GUID and search terms are used solely to perform the ABN/ACN/business-name lookup you requested, by sending them to the Australian Business Register's official web service — nothing more.</li>
@@ -68,6 +68,9 @@
   <li>None of this data is used for advertising, ad targeting, or sold to data brokers or other third parties, in any form.</li>
   <li>No human reads this data, except where you have given affirmative consent for a specific case, where it is necessary for security purposes (e.g. investigating abuse), or where required to comply with applicable law.</li>
 </ul>
+
+<h2>Data collection disclosure (Firefox Add-ons)</h2>
+<p>In line with <a href="https://extensionworkshop.com/documentation/develop/firefox-builtin-data-consent/" target="_blank" rel="noopener noreferrer">Mozilla's data collection consent requirements</a>, the Firefox build of this extension declares in its manifest that it transmits two categories of data: your search terms and your API authentication credential (GUID). Both are sent only to the Australian Business Register's official web service, only to perform the lookup you requested — the same data flow described throughout this policy, just formally declared in the format Firefox requires.</p>
 
 <h2>Contact</h2>
 <p>If you have questions about this policy, contact <a href="mailto:gl1@live.com">gl1@live.com</a>.</p>
